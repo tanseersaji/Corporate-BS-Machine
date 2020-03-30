@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+
+    .container{
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            width: 270px;
+            padding: 13px;
+            color: #fff;
+            background-color: #ff5622;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+    }
+
+    .bsviewer{
+        font-weight: 700;
+        font-size: 1.7em;
+        padding: 0px 19px;
+        text-align: center;
+
+    }
+
+    footer{
+        position: absolute;
+        bottom: 3px;
+        text-align: center;
+        line-height: 1.2em;
+        a {
+            text-decoration: none;
+            color: #ff5622;
+            font-weight: 700;
+            margin: 3px 0px;
+
+        }
+    }
+}

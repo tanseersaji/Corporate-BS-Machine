@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpService } from './http.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bsmachine';
+  bsphrase = "loading"
+
+  constructor(private httpService: HttpService){
+    this.generate()
+  }
+
+  generate(){
+    this.bsphrase = "loading"
+    this.httpService.getBS().then(data => {
+      this.bsphrase = data['phrase']
+    })
+  }
+
 }
